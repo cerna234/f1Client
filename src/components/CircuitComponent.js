@@ -8,7 +8,7 @@ function CircuitComponent() {
 
 
     useEffect( () => {
-        axios.get("https://formula-one-web-app.herokuapp.com//Circuits").then( (response) => {
+        axios.get("https://formula-one-web-app.herokuapp.com/Circuits").then( (response) => {
             setCircuits(response.data);
         })
     }, [])

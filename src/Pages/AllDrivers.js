@@ -11,7 +11,7 @@ function AllDrivers() {
   const [allDrivers,setAllDrivers] = useState([]);
 
   useEffect( () => {
-    axios.get("https://formula-one-web-app.herokuapp.com//Drivers/allDrivers").then( (response) => {
+    axios.get("https://formula-one-web-app.herokuapp.com/Drivers/allDrivers").then( (response) => {
         setAllDrivers(response.data);
     })
 
@@ -20,7 +20,7 @@ function AllDrivers() {
   return (
     <div className='allDriversPage'>
       <h2 className='titleHeading'>2022 All Drivers</h2>
-      <DriversComponent url="https://formula-one-web-app.herokuapp.com/2/Drivers/allDrivers"/>
+      <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/allDrivers"/>
     </div>
   )
 }

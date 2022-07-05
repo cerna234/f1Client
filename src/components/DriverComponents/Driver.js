@@ -13,7 +13,7 @@ function Driver() {
   
 
     useEffect( () => {
-        axios.get(`https://formula-one-web-app.herokuapp.com//Drivers/driverById/${id}`).then( (response) => {
+        axios.get(`https://formula-one-web-app.herokuapp.com/Drivers/driverById/${id}`).then( (response) => {
           setDriverInfo(response.data);
 
           

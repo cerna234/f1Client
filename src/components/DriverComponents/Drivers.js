@@ -19,7 +19,7 @@ function Drivers() {
   useEffect( ()=> {
 
     try{
-      axios.get( "https://formula-one-web-app.herokuapp.com//Drivers/TopDrivers").then( (response) => {
+      axios.get( "https://formula-one-web-app.herokuapp.com/Drivers/TopDrivers").then( (response) => {
         Drivers(response.data);
     })
 

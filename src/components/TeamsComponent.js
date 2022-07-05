@@ -14,7 +14,7 @@ function Teams() {
 
   useEffect( () => {
 
-    axios.get("https://formula-one-web-app.herokuapp.com//Drivers/teams").then( (response) => {
+    axios.get("https://formula-one-web-app.herokuapp.com/Drivers/teams").then( (response) => {
       setTeams(response.data);
     })
 
