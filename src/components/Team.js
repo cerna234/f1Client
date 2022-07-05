@@ -12,11 +12,11 @@ function Team() {
     const [TeamInfo,setTeamInfo] = useState([]);
 
     useEffect( () => {
-      axios.get(`http://localhost:3002/Drivers/driversNames/${id}`).then((response) => {
+      axios.get(`https://formula-one-web-app.herokuapp.com//Drivers/driversNames/${id}`).then((response) => {
         setTeam(response.data);
     })
 
-    axios.get(`http://localhost:3002/Drivers/teamById/${id}`).then((response) => {
+    axios.get(`https://formula-one-web-app.herokuapp.com//Drivers/teamById/${id}`).then((response) => {
         setTeamInfo(response.data);
     })
 
