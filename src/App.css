@@ -1,0 +1,1019 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    width:100%;
+    height: 100vh;
+}
+.homePage{
+    width: 100%;
+    height: 100%;
+}
+
+/* NavBar and footer logo */
+.logo{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* Landing page styles */
+.LandingPage{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.landingInfoContainer{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 85%;
+
+
+    
+}
+
+.landingInfo{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+.landingInfo h2{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.967);
+    width: 90%;
+   
+}
+.landingInfo h3{
+    font-size: 1rem;
+    color: rgb(226, 224, 224);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.753);
+    
+   
+}
+.topic{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    width: 100px;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.293);
+
+}
+
+.innerArrowButtons{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.arowButtons{
+    width: 100%;
+    height: 10vh;
+    display: block;
+    position: relative;
+    bottom: 40vh;
+}
+
+.arrows{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: 4px 4px 3px black;
+}
+
+.arrows:hover{
+    color: rgba(187, 185, 185, 0.284);
+    cursor: pointer;
+}
+
+
+/* Drivers section for home page  */
+.DriversHeadingContainer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Driver{
+    width: 280px;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.174);
+   
+}
+
+.titleHeading{
+    color: rgb(47, 47, 47);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(37, 37, 37, 0.329);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    position: relative;
+
+}
+.DriverTextContainer{
+    width: 100%;
+    
+}
+
+
+
+
+.Drivers{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.DriverImage{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+
+
+.DriverInfo{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 12vh;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.slit{
+    width: 100%;
+    height: 2vh;
+    background-color: red;
+    z-index: 20;
+}
+
+.allDriversButtonContainer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.AllDriversButton{
+
+    text-align: center;
+    color: rgb(250, 248, 248);
+    padding: 20px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.429);
+}
+
+.DriverInfoInner{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.DriverInfo h2,.DriverInfo p{ 
+    color: white;
+    padding: 10px;
+    
+}
+
+.DriverImageContainer{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(247, 245, 245);
+}
+.DriverImg{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    z-index: 20;
+    top: 2vh;
+    left: 10%;
+}
+
+.driverComponentContainer{
+    width: 100%;
+    height: 120vh;
+}
+
+.TopTenDriversContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.TopTenDrivers{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.driverlistContainer{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    height: 5vh;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.068);
+    
+    
+}
+
+.teamColor{
+    width: 5px;
+    height: 15px;
+}
+
+.driverlistContainer:hover{
+    background-color: black;
+    transition: ease-in-out;
+}
+
+.driverlistContainer:hover > .driverListText h2  {
+    color: white;
+}
+
+.driverListText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.driverListText h2,p,a{
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.driverListText h2{
+    font-size: 15px;
+}
+.driverListText p{
+    font-size: 12px;
+    color: rgba(43, 43, 43, 1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+.driverStatContainer{
+    background-color: rgba(192, 190, 190, 0.692);
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    
+    
+
+}
+.DriverStat{
+   font-size: 15px;
+   font-family: 'Lato', sans-serif;
+   
+}
+
+.driverstatInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: none;
+}
+
+/* Partners Page css */
+
+.PartnersPage{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(17, 17, 27);
+    align-items: center;
+}
+
+.PartnersHeading{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 30vw;
+    padding-bottom: 10vh;
+}
+
+.PartnersHeading:hover > .partnersHeadingArrow{
+    color: red;
+   
+ }
+
+.partnersHeadingText{
+    font-size: 30px;
+    font-weight: bold;
+}
+.partnersHeadingArrow{
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+.breakLine{
+    width: 90%;
+    height: .1px;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.sponsorIcon{
+    font-size: 60px;
+    color: rgb(226, 225, 225);
+    
+}
+
+.sponsorContainer{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+
+
+.Socials{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: space-between;
+}
+.socialsInner,.socialsInnerLeft{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.socialsInnerLeft p {
+  color: rgb(213, 213, 213);
+  font-size: 15px;
+
+}
+.socialsLink{
+    border: 1px solid rgba(26, 26, 26, 0.562);
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+.socialsLink:hover{
+    cursor: pointer;
+    color: rgb(121, 119, 119);
+}
+
+.appLinks{
+    width: 120px;
+    height: 80px;
+    background: none;
+    border: none;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(17, 17, 27);
+    border-top: 1px solid rgb(57, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerInfo{
+    width: 80%;
+    height: 30%;
+    border-right: 8px solid rgb(110, 110, 110);
+    border-bottom: 2px solid rgb(110, 110, 110);
+    border-radius: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.footerInfo p{
+    color: rgb(164, 162, 162);
+}
+
+
+.driverPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.driverPageImage{
+    height: 40%;
+    width: 40%;
+    background-color: rgb(149, 42, 6);
+
+}
+
+
+.driverPageImageContainer{
+    width: 50%;
+    height: 80%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+
+
+.DriverPageImg{
+width: 100%;
+height: 100%;
+box-shadow: 10px 7px 10px rgba(17, 1, 1, 0.268);
+}
+
+.driverPageInfo{
+    width: 50%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+
+}
+
+.driverPageInfoContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
+}
+
+.driverPageInfoContainer h2{
+    font-size: 25px;
+ 
+}
+.driverPageInfoContainer p{
+  text-align: left;
+width: 50%;
+color: rgb(55, 55, 55);
+  
+}
+
+.driverPageNumber{
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: fixed;
+    font-size: 800px;
+    color: rgba(0, 0, 0, 0.183);
+    opacity: 20%;
+
+}
+
+.driverPageInfo p{
+    padding: 20px;
+    
+
+}
+
+.allDriversPage{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.CircuitPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.circuitsContainer{
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  
+    
+    
+ 
+}
+
+.circuitContainer{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+
+.circuitContainerInner{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.circuitInfoContainer{
+    width: 90%;
+    height: 80%;
+    border-top: 10px solid rgb(110, 110, 110);
+    border-right: 9px solid rgb(110, 110, 110);
+    border-radius: 0px 20px 0px 0px;
+    padding: 20px;
+}
+
+.imageContainerCircuits{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.circuitImage{
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+ 
+}
+
+.circuitTitleContainer{
+  
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+}
+.circuitInfo{
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 20px 0px;
+    border-bottom: 3px solid rgb(48, 48, 48) ;
+    border-right: 3px solid rgb(48, 48, 48) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: left;
+    
+
+
+}
+
+.circuitInfo p {
+    color: rgb(121, 121, 123);
+    text-align: left;
+    
+
+
+}
+
+.circuitInfoInner{
+    width: 100%;
+    height: 60%;
+
+    
+}
+
+.teamPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.teamComponent{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.TeamContainer{
+   
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.innerTeamContainer{
+    width: 70%;
+    height: 90%;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 3px 3px 3px rgba(55, 55, 55, 0.61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.innerTeamContainer:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.394);
+}
+
+.TeamlogoStyling{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    padding-right: 10px;
+}
+
+.teamStyle{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 70vh;
+    padding-top: 20vh;
+    
+
+}
+
+.section{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   width:"100%";
+   height:"70vh";
+   padding-top:"20vh";
+}
+
+.teamLogo{
+    width: 300px;
+    height: 200px;
+}
+
+.innerteamSection{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    
+
+     .sponsorIcon{
+        font-size: 40px;
+        color: white;
+        
+    }
+
+    .partnersHeadingText{
+        font-size: 25px;
+    }
+
+    .Drivers{
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .driverListText h2{
+        font-size: 10px;
+    }
+    .driverListText p{
+        font-size: 6px;
+       
+    }
+    .DriverStat{
+        font-size: 10px;
+        
+     }
+
+     .landingInfo h2{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .landingInfo h3{
+        font-size: 0.8rem;
+    }
+    
+     
+    .landingInfo{
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .arowButtons{
+        bottom: 20vh;
+    }
+
+    .arrows{
+        font-size: 2rem;
+    }
+    
+    .Socials{
+        
+        height: 50vh;
+       
+        flex-direction: column;
+    }
+    .socialsInnerLeft{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+    .socialsInner{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+       
+    
+    }
+    .appLinks{
+        width: 120px;
+        height: 80px;
+        background: none;
+        border: none;
+    }
+    .driverPage{
+        
+        height: 150vh;
+        flex-direction: column;
+    }
+    .driverPageInfo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .driverPageImage{
+        height: 200px;
+        width: 200px;
+        padding-top: 20px;
+    
+    
+    }
+
+    .circuitContainerInner{
+        width: 90%;
+        height: 70%;
+    }
+
+    .circuitContainer{
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+        
+     
+    }
+    
+
+    .DriversHeadingContainer h2{
+        font-size: 35px;
+    }
+    .DriverImg{
+        width: 70%;
+      
+
+        left: 15%;
+    }
+
+    
+
+    .driverPageInfoContainer h2{
+        font-size: 20px;
+    }
+
+    .driverPageInfoContainer p{
+        font-size: 14px;
+    }
+
+    .section{
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    .teamStyle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120vh;
+
+    }
+
+    .driverPageNumber{
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        position: fixed;
+        font-size: 300px;
+        color: rgba(0, 0, 0, 0.183);
+        opacity: 20%;
+    
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+    .PartnersHeading{
+        display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         cursor: pointer;
+         width: 100%;
+         padding-bottom: 10vh;
+     }
+
+     .Driver{
+        width: 280px;
+        height: 25vh;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+    }
+
+   
+    .socialsInnerLeft p {
+        color: rgb(213, 213, 213);
+        font-size: 10px;
+      
+      }
+
+    
+    
+
+    
+    
+  }
+
+
+@media (orientation: landscape) and (max-width: 800px) and (max-height: 500px){
+    .LandingPage{
+        height: 170vh;
+    
+    }
+
+    
+    .Drivers{
+        flex-direction: row;
+ 
+        height: 90vh;
+    }
+
+    .Driver{
+        width: 200px;
+        height: 200px;
+    }
+
+    .Socials{
+        height: 100vh;
+    }
+
+    .PartnersPage{
+        height: 100vh;
+    }
+
+    .allDriversPage{
+
+        height: 260vh;
+       
+        
+    }
+
+    .TeamContainer{
+   
+   
+        height: 30vh;
+     
+    }
+
+    .circuitContainer{
+        width: 50%;
+        height: 80vh;
+        padding-top: 30px;
+    }
+
+    .driverPage{
+     
+        height: 200vh;
+     
+        
+    }
+
+ .driverPageImageContainer{
+    padding-top: 100px;
+ }
+
+ .teamStyle{
+  
+    height: 220vh;
+
+}
+    
+   
+  }
