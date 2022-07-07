@@ -90,7 +90,7 @@ function Drivers() {
     </div>
 
     
-    <DriversComponent url="http://localhost:3002/Drivers/TopTen"/>
+    <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/TopTen"/>
    
    
 
