@@ -33,7 +33,7 @@ function App() {
             <Route path="/teams" exact element={<Teams/>}/>
             <Route path="/Circuits" exact element={<Circuits/>}/>
             <Route path="/drivers/driverById/:id" exact element={<Driver/>} />
-            <Route path="/driversNames/:id" exact element={<Team/>} />
+            <Route path="/teams/:id" exact element={<Team/>} />
          
          
             

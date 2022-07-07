@@ -35,8 +35,8 @@ function Teams() {
          
             <div className='TeamContainer' >
 
-            {console.log(value)}
-              <div className='innerTeamContainer' style={{borderLeft:`2px solid ${value.teamColor}`,borderRight:`2px solid ${value.teamColor}`}} onClick= {() => {navigate(`/driversNames/${value.id}`)}}>
+          
+              <div className='innerTeamContainer' style={{borderLeft:`2px solid ${value.teamColor}`,borderRight:`2px solid ${value.teamColor}`}} onClick= {() => {navigate(`/teams/${value.id}`)}}>
               <p>{value.teamName}</p>
              
               <img className='TeamlogoStyling' src={value.teamLogo}></img>
