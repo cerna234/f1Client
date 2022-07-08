@@ -76,7 +76,7 @@ function Team() {
         
         
               </div>
-              <h3 className='driverPageNumber'>teamName</h3>
+              <h3 className='driverPageNumber'>{value.teamName}</h3>
         
               
              
