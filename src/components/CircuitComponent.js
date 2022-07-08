@@ -17,7 +17,7 @@ function CircuitComponent() {
     
   return (
     <div className='circuitsContainer'>
-        <h2 className='titleHeading' style={{color:"white"}}>2022 Circuits</h2>
+        <h2 className='titleHeading' style={{color:"white"}}>2022 Circuits <br/> <p className='pageDescription' style={{color:"white"}}>View this season's official Formula 1 teams. View the Breakdown of this seasons Teams.</p></h2>
        {circuitsList.map( (value, key) => {
 
 

@@ -42,7 +42,8 @@ function Drivers() {
       <div className="DriversHeadingContainer">
         <div className="DriverTextContainer">
 
-        <h2 className='titleHeading'>2022 TOP DRIVERS</h2>
+        <h2 className='titleHeading' style={{color:"white"}}>2022 TOP DRIVERS <br/></h2>
+       
         </div>
      
       
@@ -71,6 +72,13 @@ function Drivers() {
 
              <div className='DriverInfoInner'>
              <h2>{value.Name}</h2>
+             <div style={{width:"100%",display:"flex", justifyContent:'space-between'}}>
+             <p style={{color:"rgba(171, 170, 170, 0.774)",fontWeight:"bold",fontFamily:"'Orbitron', sans-serif"}}>{value.Number}</p>
+             <p style={{color:"rgba(171, 170, 170, 0.574)",fontWeight:"bold",fontFamily:"'Orbitron', sans-serif"}}>{value.Country}</p>
+
+             </div>
+             
+            
               
           
 
@@ -91,7 +99,11 @@ function Drivers() {
 
     
     <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/TopTen"/>
-   
+    <div className='allDriversButtonContainer'>
+    <Link className='AllDriversButton' to="/allDrivers">All Drivers</Link>
+
+    </div>
+
    
 
     </div>

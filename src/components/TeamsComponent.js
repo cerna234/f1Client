@@ -29,7 +29,7 @@ function Teams() {
   return (
     <div className='teamComponent'>
 
-      <h2 className='titleHeading'>2022 Formula1 Teams</h2>
+      <h2 className='titleHeading'>2022 Formula1 Teams <br/> <p className='pageDescription'>View this season's official Formula 1 teams. View the Breakdown of this seasons Teams.</p></h2>
       {teams.map( (value,key) => {
         return(
          
