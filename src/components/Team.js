@@ -35,8 +35,8 @@ function Team() {
            
        
             <div className='driverPageImageContainer'>
-              <div className='driverPageImage'>
-                  <img className='DriverPageImg' src={value.teamLogo}/>
+              <div style={{backgroundColor:"rgb(8,8,8,0)"}} className='driverPageImage'>
+                  <img className='DriverPageImg' style={{height:"200px",width:"250px",boxShadow:"none"}} src={value.teamLogo}/>
                     
                 
               </div>
