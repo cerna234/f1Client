@@ -642,8 +642,17 @@ color: rgb(55, 55, 55);
 .circuitImage{
     width: 100%;
     height: 100%;
-    opacity: 70%;
+    opacity: 60%;
  
+}
+
+.circuitTitle{
+    font-size: 50px;
+}
+
+.circuitTitleSub{
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .circuitTitleContainer{
@@ -658,7 +667,7 @@ color: rgb(55, 55, 55);
 }
 .circuitInfo{
     width: 100%;
-    height: 40%;
+    height: 30%;
     border-radius: 0px 0px 20px 0px;
     border-bottom: 3px solid rgb(48, 48, 48) ;
     border-right: 3px solid rgb(48, 48, 48) ;
@@ -942,6 +951,25 @@ color: rgb(55, 55, 55);
 
     .driverPageNumber{
       opacity: 0%;
+    
+    }
+
+    .circuitInfo p {
+        font-size: 10px;
+    
+    }
+    .circuitTitle{
+        font-size: 20px;
+    }
+    
+    .circuitTitleSub{
+        font-size: 20px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .circuitInfo{
+        width: 100%;
+        height: 50%;
     
     }
 
