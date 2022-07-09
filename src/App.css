@@ -270,6 +270,7 @@ html{
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.137);
     border-radius: 5px;
     height: 5vh;
+    width: 70%;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.068);
@@ -945,6 +946,8 @@ color: rgb(55, 55, 55);
         opacity: 20%;
     
     }
+
+    
   }
 
 @media only screen and (max-width: 1200px) {

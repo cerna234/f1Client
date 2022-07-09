@@ -75,6 +75,7 @@ function Drivers() {
              <div style={{width:"100%",display:"flex", justifyContent:'space-between'}}>
              <p style={{color:"rgba(171, 170, 170, 0.774)",fontWeight:"bold",fontFamily:"'Orbitron', sans-serif"}}>{value.Number}</p>
              <p style={{color:"rgba(171, 170, 170, 0.574)",fontWeight:"bold",fontFamily:"'Orbitron', sans-serif"}}>{value.Country}</p>
+             
 
              </div>
              

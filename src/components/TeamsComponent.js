@@ -18,12 +18,6 @@ function Teams() {
       setTeams(response.data);
     })
 
-
-
-    
-
-   
-
   },[])
 
   return (

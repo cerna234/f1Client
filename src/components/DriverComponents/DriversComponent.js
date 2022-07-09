@@ -26,10 +26,10 @@ function DriversComponent(props) {
   
 
   return (
-    <div  className='driverComponentContainer'>
- <div className="TopTenDriversContainer">
+  
 
-<div className="TopTenDrivers">
+
+<div className="teamComponent">
 
   {allDriversList.map( (value,key) => {
 
@@ -71,8 +71,8 @@ function DriversComponent(props) {
   })}
 
 </div>
-</div>
-    </div>
+
+
   )
 }
 
