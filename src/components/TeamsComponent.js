@@ -2,6 +2,7 @@ import React from 'react'
 import axios from "axios"
 import { useEffect,useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { Oval } from 'react-loader-spinner';
 
 function Teams() {
 
@@ -24,7 +25,13 @@ function Teams() {
     <div className='teamComponent'>
 
       <h2 className='titleHeading'>2022 Formula1 Teams <br/> <p className='pageDescription'>View this season's official Formula 1 teams. View the Breakdown of this seasons Teams.</p></h2>
-      {teams.map( (value,key) => {
+      {
+
+
+      teams.length > 0 ?
+      
+      
+      teams.map( (value,key) => {
         return(
          
             <div className='TeamContainer' >
@@ -44,7 +51,31 @@ function Teams() {
           
          
         )
-      })}
+      })
+
+      :
+
+      <div className='loading'>
+
+
+       <Oval
+         height={80}
+         width={80}
+         color="red"
+         wrapperStyle={{}}
+         wrapperClass=""
+         visible={true}
+         ariaLabel='oval-loading'
+         secondaryColor="red"
+         strokeWidth={2}
+         strokeWidthSecondary={2}
+       
+       />
+       
+       </div>
+    
+    
+    }
 
       
     </div>
