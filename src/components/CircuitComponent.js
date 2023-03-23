@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useEffect,useState } from 'react'
+import { Oval } from 'react-loader-spinner';
 
 function CircuitComponent() {
 
@@ -14,12 +15,16 @@ function CircuitComponent() {
     }, [])
 
 
-    {console.log(circuitsList)}
+    
     
   return (
     <div className='circuitsContainer'>
         <h2 className='titleHeading' style={{color:"white"}}>2022 Circuits <br/> <p className='pageDescription' style={{color:"white"}}>View this season's official Formula 1 teams. View the Breakdown of this seasons Teams.</p></h2>
-       {circuitsList.map( (value, key) => {
+       {
+
+        circuitsList.length > 0 ?
+       
+       circuitsList.map( (value, key) => {
 
 
 
@@ -59,7 +64,32 @@ function CircuitComponent() {
                 </div>
            </div>
         )
-       })}
+       })
+    
+    
+    :
+    
+   <div className='loading'>
+
+
+       <Oval
+         height={80}
+         width={80}
+         color="red"
+         wrapperStyle={{}}
+         wrapperClass=""
+         visible={true}
+         ariaLabel='oval-loading'
+         secondaryColor="red"
+         strokeWidth={2}
+         strokeWidthSecondary={2}
+       
+       />
+       
+       </div>
+    
+    
+    }
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import DriversComponent from './DriversComponent';
+import { Oval } from 'react-loader-spinner';
 
 
 
@@ -12,7 +13,25 @@ function Drivers() {
 
   const [driversList, Drivers] = useState([]);
   
+  const loader = 
+  <div className='loading'>
 
+
+<Oval
+  height={80}
+  width={80}
+  color="red"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+  ariaLabel='oval-loading'
+  secondaryColor="red"
+  strokeWidth={2}
+  strokeWidthSecondary={2}
+
+/>
+
+</div>
   const navigate = useNavigate();
 
 
@@ -54,7 +73,12 @@ function Drivers() {
     
     <div className='Drivers'>
  
-     {driversList.map( (value,key) => {
+     {
+
+      driversList.length > 0 ?
+     
+     
+     driversList.map( (value,key) => {
        return(
          <div key={key} className='Driver'>
            <div  className='DriverImageContainer' >
@@ -92,14 +116,25 @@ function Drivers() {
          
          </div>
        )
-     })}
+     })
+    
+    :
+    
+    loader
+    }
 
      
         
     </div>
 
+    {driversList.length > 0?
     
-    <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/TopTen"/>
+      <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/TopTen"/>
+      :
+
+      loader
+  }
+    
     <div className='allDriversButtonContainer'>
     <Link className='AllDriversButton' to="/allDrivers">All Drivers</Link>
 
