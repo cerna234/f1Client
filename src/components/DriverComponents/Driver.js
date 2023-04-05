@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import * as Constants from "../../CONSTANTS"
 
 function Driver() {
 
@@ -13,7 +14,7 @@ function Driver() {
   
 
     useEffect( () => {
-        axios.get(`https://formula-one-web-app.herokuapp.com/Drivers/driverById/${id}`).then( (response) => {
+        axios.get(`${Constants.ENDPOINT_PREFIX}/Drivers/driverById/${id}`).then( (response) => {
           setDriverInfo(response.data);
 
           

@@ -6,6 +6,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import DriversComponent from './DriversComponent';
 import { Oval } from 'react-loader-spinner';
+import * as Constants from "../../CONSTANTS"
 
 
 
@@ -38,7 +39,7 @@ function Drivers() {
   useEffect( ()=> {
 
     try{
-      axios.get( "https://formula-one-web-app.herokuapp.com/Drivers/TopDrivers").then( (response) => {
+      axios.get( `${Constants.ENDPOINT_PREFIX}/Drivers/TopDrivers`).then( (response) => {
         Drivers(response.data);
     })
 
@@ -129,7 +130,7 @@ function Drivers() {
 
     {driversList.length > 0?
     
-      <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/TopTen"/>
+      <DriversComponent url={`${Constants.ENDPOINT_PREFIX}/Drivers/TopTen`} />
       :
 
       loader

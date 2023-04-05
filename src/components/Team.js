@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams} from 'react-router-dom';
 import { useEffect,useState } from 'react'
 import axios from 'axios';
+import * as Constants from "../CONSTANTS"
 
 
 
@@ -12,7 +13,7 @@ function Team() {
     
 
     useEffect( () => {
-      axios.get(`https://formula-one-web-app.herokuapp.com/Drivers/teams/${id}`).then((response) => {
+      axios.get(`${Constants.ENDPOINT_PREFIX}/Drivers/teams/${id}`).then((response) => {
         setTeam(response.data);
     })
 
