@@ -3,6 +3,8 @@ import axios from "axios"
 import { useEffect,useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { Oval } from 'react-loader-spinner';
+import * as Constants from "../CONSTANTS"
+
 
 function Teams() {
 
@@ -15,7 +17,7 @@ function Teams() {
 
   useEffect( () => {
 
-    axios.get("https://formula-one-web-app.herokuapp.com/Drivers/teams").then( (response) => {
+    axios.get(`${Constants.ENDPOINT_PREFIX}/Drivers/teams`).then( (response) => {
       setTeams(response.data);
     })
 

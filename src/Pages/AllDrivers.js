@@ -6,13 +6,14 @@ import { AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import DriversComponent from '../components/DriverComponents/DriversComponent';
 import { Oval } from 'react-loader-spinner';
+import * as Constants from "../CONSTANTS"
 
 function AllDrivers() {
 
   const [allDrivers,setAllDrivers] = useState([]);
 
   useEffect( () => {
-    axios.get("https://formula-one-web-app.herokuapp.com/Drivers/allDrivers").then( (response) => {
+    axios.get(`${Constants.ENDPOINT_PREFIX}/Drivers/allDrivers`).then( (response) => {
         setAllDrivers(response.data);
     })
 
@@ -25,7 +26,7 @@ function AllDrivers() {
 
       {allDrivers.length > 0 ?
 
-      <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/allDrivers"/>
+      <DriversComponent url={`${Constants.ENDPOINT_PREFIX}/Drivers/allDrivers`}/>
 
       :
 

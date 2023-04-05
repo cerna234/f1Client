@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useEffect,useState } from 'react'
 import { Oval } from 'react-loader-spinner';
+import * as Constants from "../CONSTANTS"
 
 function CircuitComponent() {
 
@@ -9,7 +10,7 @@ function CircuitComponent() {
 
 
     useEffect( () => {
-        axios.get("https://formula-one-web-app.herokuapp.com/Circuits").then( (response) => {
+        axios.get(`${Constants.ENDPOINT_PREFIX}/Circuits`).then( (response) => {
             setCircuits(response.data);
         })
     }, [])
