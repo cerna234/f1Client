@@ -71,33 +71,24 @@ export const sponsorsRow3 = [
 export const newsData = [
   
     {
-        Topic: "Racing",
-        Title:"'We made mistakes in our judgement' says Binotto after Ferrari lose out on Monaco victory",
-        Subtext:"Ferrari Team Principal Mattia Binotto has admitted that the team made a mistake with Charles Leclerc's strategy in Monaco, after he lost the lead and finished fourth.",
-        Img:"https://www.formula1.com/content/dam/fom-website/manual/Misc/2020BelgianGPManual/GettyImages-1264825307.jpg",
+        Topic: "News",
+        Title:"Red Bull Advisor Puts Sergio Perez In His Place As Heat With Max Verstappen Continues",
+        Subtext:"Helmut Marko has made Sergio Perez's place within the Red Bull team clear as he says Max Verstappen has always been the favourite between the two. Marko has put Sergio Perez in his place, squashing his hopes of the championship win amid the ongoing battle with his teammate Max Verstappen. ",
+        Img:"https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2023/03/19181638/sergio-perez-fist-bump-cameraman-in-the-background-planetf1.jpg",
         
     },
     {
-        Topic: "News",
-        Title:"Williams fined $25,000 for procedural breach of financial regulations",
-        Subtext:"Williams have been fined $25,000 following a procedural breach of Formula 1’s financial regulations, the sport’s governing body the FIA announced on Tuesday.",
-        Img:"https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/AzerbaijanGP/Pre/WilliamsF1_61828_HiRes.jpg.transform/9col-retina/image.jpg",
+        Topic: "Racing",
+        Title:"Winner: Max Verstappen",
+        Subtext:"Verstappen was pleased there was only a week to wait for the next race after a difficult weekend in Baku – and the Dutchman made fine work of putting that disappointment behind him in Miami.",
+        Img:"https://www.gannett-cdn.com/presto/2022/05/08/USAT/f10e5e8f-dedd-4804-8d10-1696b3203712-max.jpg?crop=4317,3212,x641,y68",
         
     },
     {
         Topic: "Championship",
-        Title:"Checo Pérez wins Monaco Grand Prix in big day for Mexican auto racing",
-        Subtext:"He's now the most successful Mexican F1 driver in history",
-        Img:"http://www.thesouthafrican.com/wp-content/uploads/2022/05/Sergio-Perez-1.jpg",
-        
-    },
-   
-    {
-
-        Topic: "Gaming",
-        Title:"F1 MANAGER 2022: Pre-order information, release date and gameplay trailer revealed",
-        Subtext:"Frontier Developments' Formula 1 management sim, F1 Manager 2022, will launch in late August – with pre-orders available now",
-        Img:"https://www.gematsu.com/wp-content/uploads/2022/03/F1-Manager-2022_2022_03-07-22_001.jpg",
+        Title:"Fernando Alonso is loving life at Aston Martin,",
+        Subtext:"Fernando Alonso is loving life at Aston Martin, the double world champion revelling in a car that is allowing him to showcase his impressive talent. That was on display once again in Miami as he secured an unlikely front row start.",
+        Img:"https://www.racefans.net/wp-content/uploads/2023/05/racefansdotnet-6646627_HiRes.jpg",
         
     }
 
