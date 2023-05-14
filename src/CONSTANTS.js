@@ -1,1 +1,1 @@
-export const ENDPOINT_PREFIX = "http://3.133.107.157:3060";
+export const ENDPOINT_PREFIX = "https://f1-api.onrender.com";
