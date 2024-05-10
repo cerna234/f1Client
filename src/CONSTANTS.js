@@ -1,1 +1,1 @@
-export const ENDPOINT_PREFIX = "https://f1-api.onrender.com";
+export const ENDPOINT_PREFIX = "https://f1webapp-df2f0ca18b84.herokuapp.com";
